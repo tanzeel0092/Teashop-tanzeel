@@ -1,0 +1,580 @@
+html,
+body {
+  margin: 0;
+  width: 100% auto;
+  height: 100% auto;
+  font-family: sans-serif;
+}
+/***** Home Page **********/
+
+.main {
+  width: 100%;
+  background-attachment: inherit;
+  background-size: 100% 100%;
+}
+
+.main .header {
+  top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0%;
+  background-color: white;
+}
+.main a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+.main ul {
+  display: flex;
+  justify-content: space-between;
+  width: 19%;
+  align-items: center;
+  list-style: none;
+}
+.main .text {
+  top: 10%;
+  width: 100%;
+  height: 40%;
+}
+.header p {
+  margin: auto 3%;
+  color: black;
+  font-size: 23px;
+  font-family: Rockwell;
+}
+.main .header li {
+  color: #4a4a4a;
+  width: 58%;
+}
+.main li img {
+  width: 30%;
+}
+.contents {
+  margin-top: 5%;
+}
+.images {
+  display: flex;
+  margin: 1%;
+}
+
+.images img {
+  width: 30%;
+}
+.heading {
+  position: relative;
+  width: 99%;
+  margin-left: 1%;
+}
+.heading h4 {
+  margin-top: 1%;
+}
+.price {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 95%;
+  bottom: 0%;
+}
+.price button {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 15%;
+  height: 42px;
+  border-radius: 10%;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15 px 0;
+  background-color: blanchedalmond;
+  z-index: 2;
+  border: 1 px solid grey;
+  width: 100%;
+}
+.bottom {
+  margin-left: 57%;
+  justify-content: space-between;
+  width: 100%;
+}
+.bottom span {
+  font-size: 28px;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+
+.bottom button {
+  margin-left: 12%;
+  margin-right: 9%;
+  background-color: black;
+  color: white;
+  border-style: none;
+  height: 48px;
+  width: 42%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  border-radius: 8px;
+}
+.bottom button a {
+  text-decoration: none;
+  color: white;
+}
+.items h4 {
+  color: #4a4a4a;
+}
+.items p {
+  color: #4a4a4a;
+}
+.items {
+  margin: 4%;
+}
+
+@media screen and (max-width: 500px) {
+  .price button {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 34%;
+    height: 37px;
+    border-radius: 10%;
+  }
+
+  .main li img {
+    width: 40%;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 45px px 0;
+    background-color: blanchedalmond;
+    z-index: 2;
+    border: 1 px solid grey;
+    width: 100%;
+    text-align: center;
+  }
+  .bottom button {
+    margin-left: 12%;
+    margin-right: 9%;
+    background-color: black;
+    color: white;
+    border-style: none;
+    height: 48 px;
+    width: 54%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    border-radius: 6 px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main li img {
+    width: 40%;
+  }
+  .price button {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 29%;
+    height: 42px;
+    border-radius: 10%;
+  }
+  .bottom button {
+    margin-left: 12%;
+    margin-right: 9%;
+    background-color: black;
+    color: white;
+    border-style: none;
+    height: 48px;
+    width: 47%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    border-radius: 7px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bottom button {
+    margin-left: 12%;
+    margin-right: 9%;
+    background-color: black;
+    color: white;
+    border-style: none;
+    height: 48px;
+    width: 47%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    border-radius: 7px;
+  }
+  .main li img {
+    width: 40%;
+  }
+  .price button {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 29%;
+    height: 42px;
+    border-radius: 10%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .bottom button {
+    margin-left: 12%;
+    margin-right: 9%;
+    background-color: black;
+    color: white;
+    border-style: none;
+    height: 48px;
+    width: 47%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    border-radius: 7px;
+  }
+  .main li img {
+    width: 40%;
+  }
+  .price button {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 29%;
+    height: 42px;
+    border-radius: 10%;
+  }
+}
+
+/***************
+***Sign up******
+***************/
+
+.popup {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.popup .popup-inner {
+  background-color: #fdfafa;
+  padding: 3%;
+  width: 25%;
+  height: 50%;
+  margin: 10% 33%;
+}
+.popup .popup-inner h1 {
+  font-family: rockwell;
+  font-weight: bold;
+  text-align: center;
+}
+.popup .popup-inner h3 {
+  text-align: center;
+}
+
+.popup .popup-inner a {
+  color: #575757;
+  text-decoration: none;
+  float: right;
+}
+.popup-input input {
+  width: 90%;
+  padding: 4%;
+  border-radius: 10%;
+}
+.popup-input button {
+  width: 99%;
+  padding: 5%;
+  background-color: black;
+  font-size: large;
+  color: white;
+  border-radius: 10%;
+}
+.popup-inner .member a {
+  color: black;
+  text-decoration: underline;
+}
+
+.popup-input .member {
+  color: #272727;
+  text-align: center;
+  position: relative;
+  left: 21%;
+}
+
+.popup-input .member a {
+  margin-right: 43%;
+  display: block;
+  color: black;
+}
+@media screen and (min-width: 300px) and (max-width: 449px) {
+  .popup .popup-inner {
+    background-color: #fdfafa;
+    padding: 3%;
+    width: 52%;
+    height: 53%;
+    margin: 35% 20%;
+  }
+  popup .popup-inner h1 {
+    font-family: rockwell;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+  }
+  .popup-input .member {
+    color: #272727;
+    text-align: left;
+    position: relative;
+    left: 16%;
+    font-size: 11px;
+  }
+  .popup-input .member a {
+    margin-right: 28%;
+    display: block;
+    color: black;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 799px) {
+  .popup .popup-inner {
+    background-color: #fdfafa;
+    padding: 3%;
+    width: 55%;
+    height: 50%;
+    margin: 43% 20%;
+  }
+  .popup-input .member {
+    color: #272727;
+    text-align: left;
+    position: relative;
+    left: 9%;
+  }
+  .popup-input .member a {
+    margin-right: 14%;
+    display: block;
+    color: black;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 800px) {
+  .popup .popup-inner {
+    background-color: #fdfafa;
+    padding: 3%;
+    width: 25%;
+    height: 36%;
+    margin: 29% 35%;
+  }
+  .popup-input .member {
+    color: #272727;
+    text-align: left;
+    position: relative;
+    left: 0;
+    margin: 0 0 0 31px;
+    top: 26px;
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  .popup .popup-inner {
+    background-color: #fdfafa;
+    padding: 3%;
+    width: 25%;
+    height: 61%;
+    margin: 6% 35%;
+  }
+  .popup-input .member {
+    color: #272727;
+    text-align: left;
+    position: relative;
+    left: 10%;
+  }
+  .popup-input .member a {
+    margin-right: 20%;
+    display: block;
+    color: black;
+  }
+}
+
+/******************
+***Sign in***
+*******************/
+
+/******************
+****form-page***
+*****************/
+
+.order-summary p {
+  background-color: black;
+  text-align: center;
+  padding: 50px;
+  color: #fff;
+  font-size: 30px;
+}
+
+/***************
+*****Table******
+***************/
+table,
+th,
+tr {
+  border-collapse: collapse;
+  border-bottom: 1px solid;
+  padding: 10px;
+  text-align: left;
+}
+@media only screen and (max-width: 500px) {
+  table,
+  th,
+  tr {
+    font-size: 15px;
+  }
+}
+table td {
+  padding: 30px;
+}
+.total {
+  border-collapse: collapse;
+  border-top: 2px;
+  border-bottom: 2px solid white;
+}
+
+.tag1 {
+  padding: 15vw;
+  padding-top: 0;
+}
+@media only screen and (max-width: 500px) {
+  .tag1 {
+    padding: 10vw;
+  }
+}
+.tag1 .center {
+  width: 100%;
+  display: grid;
+  font-size: 25px;
+  color: #000000;
+}
+.tag1 .center h2 {
+  text-align: left;
+}
+@media only screen and (max-width: 500px) {
+  .tag1 .center h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .tag1 .center h3 {
+    font-size: 15px;
+  }
+}
+.center p {
+  text-align: left;
+}
+@media only screen and (max-width: 500px) {
+  .center p {
+    text-align: center;
+    font-size: 19px;
+  }
+}
+.form-page p {
+  font-size: 20px;
+  margin: 0;
+  margin-top: 20px;
+  color: black;
+}
+@media only screen and (max-width: 500px) {
+  .form-page p {
+    font-size: 15px;
+  }
+}
+.form-page .last p {
+  font-size: 25px;
+}
+/***************
+*****Form*******
+***************/
+.form-page form {
+  display: grid;
+}
+.form-page input {
+  width: 70%;
+  height: 6vh;
+  border-radius: 10p;
+  border: 1px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #eaeaea;
+}
+.form-page .btn {
+  width: 30vh;
+  height: 6vh;
+  border-radius: 10px;
+  /* border: 1px solid #fd3103; */
+  border-radius: 5px;
+  background-color: black;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+  border: 0;
+  left: 15%;
+}
+
+/***************
+*****ThankYou***
+******Page******
+***************/
+
+.thankyou {
+  background-color: black;
+}
+.thankyou p {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  right: 43%;
+  font-weight: lighter;
+  padding: 50px;
+}
+.thanks {
+  font-weight: lighter;
+  color: #4e4e4e;
+  text-align: center;
+}
+.section1 button {
+  background-color: black;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  position: absolute;
+  right: 45%;
+  left: 45%;
+}
+.section1 button a {
+  text-decoration: none;
+  color: white;
+}
+@media only screen and (max-width: 500px) {
+  .thankyou p {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .section1 button {
+    position: absolute;
+    right: 34%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .section1 button {
+    position: absolute;
+    right: 46%;
+  }
+}
